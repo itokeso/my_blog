@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__title">
+        <%= link_to "my blog", root_path, class: "header__title--text" %>
+      </div>
+      <div class="header__right">
+        <%= link_to "新規投稿", new_post_path , class: "header__right--btn" %>
+      </div>
+    </header>
+    <div class="contents">
     <%= yield %>
+    </div>
   </body>
 </html>
